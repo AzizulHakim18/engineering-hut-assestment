@@ -13,6 +13,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font awosome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 
 <body>
@@ -73,7 +76,40 @@
     <div class="divider my-0 h-0"></div>
     <!-- navbar ended -->
     <!-- body part -->
-    <main>
+    <main class="w-11/12 mx-auto">
+        <!-- drawer section -->
+        <div class="drawer lg:drawer-open">
+            <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+            <div class="drawer-content flex flex-col items-center justify-center">
+                <!-- Page content here -->
+                <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+                <h1>hellow</h1>
+            </div>
+            <div class="drawer-side">
+                <label for="my-drawer-2" class="drawer-overlay"></label>
+                <ul class="menu p-4 w-80 border-r-2 h-full border-slate-300 text-base-content">
+                    <!-- Sidebar content here -->
+                    <h2 class="text-2xl font-bold my-16">User Profile</h2>
+                    <li class="my-2"><a class="text-xl font-semibold text-base-400 border-r-2 border-rose-400"><i
+                                class="fa-regular fa-user"></i>
+                            User Info</a>
+                    </li>
+                    <li class="my-2"><a class="text-xl font-semibold text-base-400"><i class="fa-regular fa-heart"></i>
+                            Favourites</a>
+                    </li>
+                    <li class="my-2"><a class="text-xl font-semibold text-base-400"><i class="fa-regular fa-star"></i>
+                            WatchList</a>
+                    </li>
+                    <li class="my-2"><a class="text-xl font-semibold text-base-400"><i
+                                class="fa-solid fa-gear"></i>Settings</a></li>
+                    <li class="my-2"><a class="text-xl font-semibold text-base-400"><i class="fa-regular fa-bell"></i>
+                            Notification</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
 
     </main>
 </body>
